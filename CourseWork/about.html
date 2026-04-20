@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBraga — О проекте</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+<body class="page-preload">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark brand-mark-image">
+                        <img src="assets/logo-icon.png" alt="Логотип InstaBraga" class="brand-logo">
+                    </span>
+                    <span class="brand-text">InstaBraga</span>
+                </a>
+
+                <div class="topbar-search">
+                    <input type="text" placeholder="Сведения о проекте" readonly>
+                </div>
+            </div>
+
+            <div class="topbar-user">
+                <span class="user-dot"></span>
+                <span>Гость</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-layout app-layout-wide">
+        <aside class="sidebar">
+            <div class="panel menu-card">
+                <div class="menu-title">Меню</div>
+
+                <ul class="left-menu">
+                    <li><a class="menu-link" href="index.html">Лента</a></li>
+                    <li><a class="menu-link" href="form.html">Создать пост</a></li>
+                    <li><a class="menu-link" href="ads.html">Управление рекламой</a></li>
+                    <li><a class="menu-link active" href="about.html">О проекте</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content-column content-column-wide">
+            <div class="panel about-card">
+                <div class="page-head">
+                    <h1 class="page-title">О проекте</h1>
+                    <p class="page-subtitle">Курсовая работа по теме социальной мини-платформы без backend.</p>
+                </div>
+
+                <div class="page-logo-card">
+                    <img src="assets/logo-banner.png" alt="Логотип InstaBraga" class="page-logo-banner">
+                    <div class="page-logo-content">
+                        <div class="page-logo-title">InstaBraga</div>
+                        <div class="page-logo-subtitle">Мини-платформа для публикаций, лайков, комментариев и рекламных блоков.</div>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="info-block">
+                        <h2 class="card-title">Основные сведения</h2>
+                        <div class="info-list">
+                            <div class="info-row"><span>Название проекта:</span><strong>InstaBraga</strong></div>
+                            <div class="info-row"><span>Тема:</span><strong>Посты, лайки, комментарии без backend</strong></div>
+                            <div class="info-row"><span>Автор:</span><strong>Баранов Никита</strong></div>
+                            <div class="info-row"><span>Группа:</span><strong>14-ТИС</strong></div>
+                            <div class="info-row"><span>Курс:</span><strong>2 курс</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h2 class="card-title">Контакты</h2>
+                        <div class="info-list">
+                            <div class="info-row"><span>Email:</span><strong>aloefrag@gmail.com</strong></div>
+                            <div class="info-row"><span>Платформа:</span><strong>Чистый HTML, CSS, JavaScript</strong></div>
+                            <div class="info-row"><span>Хранение:</span><strong>localStorage</strong></div>
+                            <div class="info-row"><span>Поддержка:</span><strong>Обычное открытие html-файлов</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h2 class="card-title">Описание проекта</h2>
+                    <p class="about-text">
+                        InstaBraga — клиентская мини-платформа с лентой публикаций, формой добавления постов,
+                        системой лайков, комментариев и отдельным разделом управления рекламными блоками.
+                        Все данные сохраняются в localStorage, поэтому состояние приложения не теряется после перезагрузки страницы.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h2 class="card-title">Краткая инструкция</h2>
+                    <ol class="instruction-list">
+                        <li>Откройте <strong>index.html</strong> для просмотра ленты.</li>
+                        <li>Перейдите в <strong>Создать пост</strong> для добавления новой публикации.</li>
+                        <li>Используйте лайки, комментарии и удаление на главной странице.</li>
+                        <li>Откройте <strong>Управление рекламой</strong> для изменения рекламных блоков.</li>
+                        <li>При необходимости нажмите кнопку сброса стандартной рекламы.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utils.js"></script>
+</body>
+</html>

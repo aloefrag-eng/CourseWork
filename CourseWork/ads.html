@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBraga — Управление рекламой</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+<body class="page-preload">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark brand-mark-image">
+                        <img src="assets/logo-icon.png" alt="Логотип InstaBraga" class="brand-logo">
+                    </span>
+                    <span class="brand-text">InstaBraga</span>
+                </a>
+
+                <div class="topbar-search">
+                    <input type="text" placeholder="Редактирование рекламы" readonly>
+                </div>
+            </div>
+
+            <div class="topbar-user">
+                <span class="user-dot"></span>
+                <span>Гость</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-layout app-layout-wide">
+        <aside class="sidebar">
+            <div class="panel menu-card">
+                <div class="menu-title">Меню</div>
+
+                <ul class="left-menu">
+                    <li><a class="menu-link" href="index.html">Лента</a></li>
+                    <li><a class="menu-link" href="form.html">Создать пост</a></li>
+                    <li><a class="menu-link active" href="ads.html">Управление рекламой</a></li>
+                    <li><a class="menu-link" href="about.html">О проекте</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content-column content-column-wide">
+            <div class="panel ads-card">
+                <div class="page-head">
+                    <h1 class="page-title">Управление рекламой</h1>
+                    <p class="page-subtitle">Изменение правой рекламы и рекламного поста в ленте.</p>
+                </div>
+
+                <div id="ads-status" class="status-text"></div>
+
+                <div class="ads-grid">
+                    <div class="panel inner-card">
+                        <h2 class="card-title">Правая реклама</h2>
+
+                        <form id="side-ad-form" class="ad-form">
+                            <div class="field-group">
+                                <label for="side-title">Заголовок</label>
+                                <input id="side-title" name="title" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="side-content">Текст</label>
+                                <textarea id="side-content" name="content" class="form-control form-textarea small-textarea"></textarea>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="side-image">Изображение</label>
+                                <input id="side-image" name="image" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="side-button">Текст кнопки</label>
+                                <input id="side-button" name="buttonText" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="side-link">Ссылка</label>
+                                <input id="side-link" name="link" type="text" class="form-control">
+                            </div>
+
+                            <div class="actions-row">
+                                <button type="submit" class="primary-btn">Сохранить правую рекламу</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="panel inner-card">
+                        <h2 class="card-title">Рекламный пост в ленте</h2>
+
+                        <form id="feed-ad-form" class="ad-form">
+                            <div class="field-group">
+                                <label for="feed-title">Заголовок</label>
+                                <input id="feed-title" name="title" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feed-content">Текст</label>
+                                <textarea id="feed-content" name="content" class="form-control form-textarea small-textarea"></textarea>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feed-image">Изображение</label>
+                                <input id="feed-image" name="image" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feed-button">Текст кнопки</label>
+                                <input id="feed-button" name="buttonText" type="text" class="form-control">
+                            </div>
+
+                            <div class="field-group">
+                                <label for="feed-link">Ссылка</label>
+                                <input id="feed-link" name="link" type="text" class="form-control">
+                            </div>
+
+                            <div class="actions-row">
+                                <button type="submit" class="primary-btn">Сохранить рекламный пост</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="actions-row top-space">
+                    <button id="reset-ads" type="button" class="secondary-btn">Сбросить стандартную рекламу</button>
+                </div>
+            </div>
+
+            <div class="preview-grid">
+                <div class="panel ads-card">
+                    <h2 class="card-title">Предпросмотр правой рекламы</h2>
+                    <div id="side-ad-preview"></div>
+                </div>
+
+                <div class="panel ads-card">
+                    <h2 class="card-title">Предпросмотр рекламного поста</h2>
+                    <div id="feed-ad-preview"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/ads.js"></script>
+</body>
+</html>

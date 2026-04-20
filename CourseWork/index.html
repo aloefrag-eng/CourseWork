@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBraga — Лента</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+<body class="page-preload">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="topbar-left">
+                <a href="index.html" class="brand">
+                    <span class="brand-mark brand-mark-image">
+                        <img src="assets/logo-icon.png" alt="Логотип InstaBraga" class="brand-logo">
+                    </span>
+                    <span class="brand-text">InstaBraga</span>
+                </a>
+
+                <div class="topbar-search">
+                    <input id="post-search" type="text" placeholder="Поиск по публикациям">
+                </div>
+            </div>
+
+            <div class="topbar-user">
+                <span class="user-dot"></span>
+                <span>Гость</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-layout">
+        <aside class="sidebar">
+            <div class="panel menu-card">
+                <div class="menu-title">Меню</div>
+
+                <ul class="left-menu">
+                    <li><a class="menu-link active" href="index.html">Лента</a></li>
+                    <li><a class="menu-link" href="form.html">Создать пост</a></li>
+                    <li><a class="menu-link" href="ads.html">Управление рекламой</a></li>
+                    <li><a class="menu-link" href="about.html">О проекте</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content-column">
+            <div class="panel create-post-banner">
+                <div>
+                    <h1 class="section-title">Лента публикаций</h1>
+                    <p id="search-status" class="search-status">Показаны все публикации</p>
+                </div>
+
+                <a href="form.html" class="primary-btn">Создать пост</a>
+            </div>
+
+            <div id="feed" class="feed"></div>
+        </section>
+
+        <aside class="rightbar rightbar-single">
+            <div id="side-ad" class="panel widget-card"></div>
+        </aside>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
